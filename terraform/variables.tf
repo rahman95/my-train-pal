@@ -8,6 +8,6 @@ variable "aws_profile" {
   default = "default"
 }
 
-variable "example_secret" {
+variable "api_key" {
   type = "string"
 }

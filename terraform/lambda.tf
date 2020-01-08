@@ -21,6 +21,7 @@ resource "aws_lambda_function" "lambda" {
   runtime     = "nodejs10.x"
   timeout     = "30"
   memory_size = "${local.lambda_memory}"
+  layers      = ["${aws_lambda_layer_version.dependency_layer.arn}"]
 
   environment {
     variables = {

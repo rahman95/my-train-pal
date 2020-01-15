@@ -7,7 +7,7 @@
         "outDir": "./lambda/dist",
         "strict": false,
         "target": "es2017",
-        "typeRoots": ["src/@types", "node_modules/@types", "../node_modules/@types"]
+        "typeRoots": ["src/types", "src/@types", "node_modules/@types", "../node_modules/@types"]
     },
     "include": ["./lambda/src/**/*"],
     "exclude": ["./lambda/src/**/*.test.ts"]
